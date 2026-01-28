@@ -203,9 +203,7 @@ src/main/resources/db/changelog/
 
 ## 👤 Author
 
-**Your Name**
-GitHub: [https://github.com/your-username/your-repo](https://github.com/your-username/your-repo)
-
+**Satagouda Patil**
 ---
 
 ## ✅ Status
