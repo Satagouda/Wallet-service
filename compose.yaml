@@ -1,0 +1,56 @@
+#version: "3.9"
+#
+#services:
+#  postgres:
+#    image: postgres:15
+#    container_name: wallet-postgres
+#    environment:
+#      POSTGRES_DB: walletdb
+#      POSTGRES_USER: walletuser
+#      POSTGRES_PASSWORD: walletpass
+#    ports:
+#      - "5432:5432"
+#    volumes:
+#      - postgres_data:/var/lib/postgresql/data
+#
+#  app:
+#    build: .
+#    container_name: wallet-app
+#    depends_on:
+#      - postgres
+#    ports:
+#      - "8080:8080"
+#    environment:
+#      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/walletdb
+#      SPRING_DATASOURCE_USERNAME: walletuser
+#      SPRING_DATASOURCE_PASSWORD: walletpass
+#    restart: always
+#
+#volumes:
+#  postgres_data:
+
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: itkedu-postgres
+    environment:
+      POSTGRES_DB: walletdb
+      POSTGRES_USER: walletuser
+      POSTGRES_PASSWORD: walletpass
+    ports:
+      - "5432:5432"
+
+  app:
+    build: .
+    container_name: itkedu-app
+    depends_on:
+      - postgres
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/walletdb
+      SPRING_DATASOURCE_USERNAME: walletuser
+      SPRING_DATASOURCE_PASSWORD: walletpass
+
