@@ -31,7 +31,7 @@ The system is fully **Dockerized**, uses **PostgreSQL** as the database, and man
 
 ---
 
-## 📂 Project Structure (Simplified)
+## 📂 Project Structure
 
 ```
 wallet-service
