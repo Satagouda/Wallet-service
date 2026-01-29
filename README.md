@@ -206,6 +206,3 @@ src/main/resources/db/changelog/
 **Satagouda Patil**
 ---
 
-## ✅ Status
-
-✔ Assignment completed and ready for submission.
